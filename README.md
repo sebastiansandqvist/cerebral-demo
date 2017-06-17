@@ -2,7 +2,7 @@
 
 ## Installation:
 
-1. Clone the repo
+1. **Clone the repo**
 
 SSH:
 ```bash
@@ -16,13 +16,13 @@ HTTPS:
 git clone git@github.com:sebastiansandqvist/cerebral-demo.git
 ```
 
-2. Install dependencies
+2. **Install dependencies**
 
 ```bash
 npm install
 ```
 
-3. Start the dev environment
+3. **Start the dev environment**
 
 ```bash
 npm run part1
@@ -41,9 +41,9 @@ npm run part3
 
 ## Resources
 
-[Cerebral website](http://cerebraljs.com/docs/introduction/)
-[Cerebral vs mobx vs redux](http://www.christianalfoni.com/articles/2017_03_19_Cerebral-2)
-[Function tree vs. Promise chains](http://www.christianalfoni.com/articles/2017_04_16_The-second-case-for-function-tree)
+- [Cerebral website](http://cerebraljs.com/docs/introduction/)
+- [Cerebral vs mobx vs redux](http://www.christianalfoni.com/articles/2017_03_19_Cerebral-2)
+- [Function tree vs. Promise chains](http://www.christianalfoni.com/articles/2017_04_16_The-second-case-for-function-tree)
 
 Webpackbin example
 - [Webpackbin (created with Cerebral)](https://www.webpackbin.com/)
