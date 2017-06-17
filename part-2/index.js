@@ -217,7 +217,8 @@ class App extends Component {
   removeFromCart(item) {
     const itemIndex = this.state.cart.indexOf(item);
     this.setState({
-      filteredItems: item.name.toLowerCase().includes(this.state.query.toLowerCase()) ? this.state.filteredItems.concat(item) : this.state.filteredItems,
+      filteredItems: item.name.toLowerCase().includes(this.state.query.toLowerCase()) && hasId(this.state.items, item.id) ?
+        this.state.filteredItems.concat(item) : this.state.filteredItems,
       cart: [
         ...this.state.cart.slice(0, itemIndex),
         ...this.state.cart.slice(itemIndex + 1, this.state.cart.length)

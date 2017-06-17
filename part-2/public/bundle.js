@@ -427,7 +427,7 @@ var App = function (_Component) {
     value: function removeFromCart(item) {
       var itemIndex = this.state.cart.indexOf(item);
       this.setState({
-        filteredItems: item.name.toLowerCase().includes(this.state.query.toLowerCase()) ? this.state.filteredItems.concat(item) : this.state.filteredItems,
+        filteredItems: item.name.toLowerCase().includes(this.state.query.toLowerCase()) && hasId(this.state.items, item.id) ? this.state.filteredItems.concat(item) : this.state.filteredItems,
         cart: [].concat(_toConsumableArray(this.state.cart.slice(0, itemIndex)), _toConsumableArray(this.state.cart.slice(itemIndex + 1, this.state.cart.length)))
       });
     }
