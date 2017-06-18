@@ -9,11 +9,11 @@ SSH:
 git clone git@github.com:sebastiansandqvist/cerebral-demo.git
 ```
 
-(or)
+or
 
 HTTPS:
 ```bash
-git clone git@github.com:sebastiansandqvist/cerebral-demo.git
+git clone https://github.com/sebastiansandqvist/cerebral-demo.git
 ```
 
 2. **Install dependencies**

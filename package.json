@@ -35,7 +35,6 @@
   },
   "dependencies": {
     "@cerebral/http": "0.0.0-beta.3",
-    "@cerebral/router": "0.0.0-beta.3",
     "browser-sync": "^2.18.12",
     "cerebral": "^2.0.0-beta.3",
     "prop-types": "^15.5.10",
