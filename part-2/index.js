@@ -73,8 +73,8 @@ import { render } from 'react-dom';
 // -------------------------------------
 
 function alphabetically(a, b) {
-  if (a.name < b.name) return -1;
-  if (a.name > b.name) return 1;
+  if (a.name < b.name) { return -1 };
+  if (a.name > b.name) { return 1 };
   return 0;
 }
 
@@ -115,6 +115,27 @@ const Cart = ({ items, removeFromCart }) => {
     </div>
   );
 };
+
+const Nav = ({ setPage }) => (
+  <nav>
+    <button onClick={() => setPage('Book')}>View books</button>
+    <button onClick={() => setPage('Movie')}>View movies</button>
+    <button onClick={() => setPage('Everything')}>View all</button>
+  </nav>
+);
+
+const Title = ({ isLoading, title }) => (
+  <h1>{isLoading ? 'Loading...' : `${title} Store`}</h1>
+);
+
+const SearchInput = ({ query, performSearch }) => (
+  <input
+    type='text'
+    value={query}
+    onInput={performSearch}
+    placeholder='Search'
+  />
+);
 
 function hasId(arr, id) {
   return arr.reduce((idFound, nextItem) => (idFound || nextItem.id === id), false);
@@ -229,13 +250,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>{this.state.isLoading ? 'Loading...' : `${this.state.page} Store`}</h1>
-        <nav>
-          <button onClick={() => this.setPage('Book')}>View books</button>
-          <button onClick={() => this.setPage('Movie')}>View movies</button>
-          <button onClick={() => this.setPage('Everything')}>View all</button>
-        </nav>
-        <input type='text' value={this.state.query} onInput={this.performSearch} placeholder='Search' />
+        <Title isLoading={this.state.isLoading} title={this.state.page} />
+        <Nav setPage={this.setPage}/>
+        <SearchInput query={this.state.query} performSearch={this.performSearch} />
         <ProductList items={this.state.filteredItems} addToCart={this.addToCart} />
         <Cart items={this.state.cart} removeFromCart={this.removeFromCart} />
       </div>

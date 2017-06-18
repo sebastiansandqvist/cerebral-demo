@@ -7,11 +7,9 @@
     "part1:build": "webpack --config part-1/build/webpack.config.js --watch",
     "part1:serve": "browser-sync start --server --serveStatic \"part-1/public\" --files \"part-1/public/bundle.js\"",
     "part1": "npm-run-all --parallel part1:*",
-
     "part2:build": "webpack --config part-2/build/webpack.config.js --watch",
     "part2:serve": "browser-sync start --server --serveStatic \"part-2/public\" --files \"part-2/public/bundle.js\" --no-open",
     "part2": "npm-run-all --parallel part2:*",
-
     "part3:build": "webpack --config part-3/build/webpack.config.js --watch",
     "part3:serve": "browser-sync start --server --serveStatic \"part-3/public\" --files \"part-3/public/bundle.js\" --no-open",
     "part3": "npm-run-all --parallel part3:*"
@@ -36,6 +34,8 @@
     "webpack": "^2.6.1"
   },
   "dependencies": {
+    "@cerebral/http": "0.0.0-beta.3",
+    "@cerebral/router": "0.0.0-beta.3",
     "browser-sync": "^2.18.12",
     "cerebral": "^2.0.0-beta.3",
     "prop-types": "^15.5.10",

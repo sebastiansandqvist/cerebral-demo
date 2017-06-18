@@ -2,10 +2,10 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
-  entry: path.resolve('part-2', 'index.js'),
+  entry: path.resolve('part-3', 'src', 'index.js'),
   devtool: 'none',
   output: {
-    path: path.resolve('part-2', 'public'),
+    path: path.resolve('part-3', 'public'),
     filename: 'bundle.js'
   },
   externals: {
