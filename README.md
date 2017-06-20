@@ -43,6 +43,7 @@ npm run part3
 
 - [Cerebral website](http://cerebraljs.com/docs/introduction/)
 - [Cerebral vs. mobx vs. redux](http://www.christianalfoni.com/articles/2017_03_19_Cerebral-2)
+- [Function tree](http://www.christianalfoni.com/articles/2016_09_11_The-case-for-function-tree)
 - [Function tree vs. Promise chains](http://www.christianalfoni.com/articles/2017_04_16_The-second-case-for-function-tree)
 
 Webpackbin example

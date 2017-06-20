@@ -1,3 +1,5 @@
 node_modules
 .DS_Store
-bundle.js
+part1/public/bundle.js
+part2/public/bundle.js
+part3/public/bundle.js

@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 46);
+/******/ 	return __webpack_require__(__webpack_require__.s = 47);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -382,13 +382,13 @@ function getStateTreeProp() {
   }, null);
 }
 //# sourceMappingURL=utils.js.map
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
 
 /***/ }),
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(86)
+module.exports = __webpack_require__(87)
 
 
 /***/ }),
@@ -702,18 +702,11 @@ exports.default = Tag;
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(92)
+module.exports = __webpack_require__(93)
 
 
 /***/ }),
 /* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(65)
-
-
-/***/ }),
-/* 6 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -903,6 +896,13 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(66)
+
+
+/***/ }),
 /* 7 */
 /***/ (function(module, exports) {
 
@@ -912,7 +912,7 @@ module.exports = React;
 /* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(60)
+module.exports = __webpack_require__(61)
 
 
 /***/ }),
@@ -1299,7 +1299,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
 
 /***/ }),
 /* 14 */
@@ -1468,7 +1468,7 @@ if (process.env.NODE_ENV !== 'production') {
   module.exports = __webpack_require__(105)();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
 
 /***/ }),
 /* 17 */
@@ -1498,9 +1498,9 @@ module.exports = ReactPropTypesSecret;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cerebral__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cerebral___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_cerebral__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_cerebral_operators__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_cerebral_operators__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_cerebral_operators___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_cerebral_operators__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cerebral_http_operators__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cerebral_http_operators__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cerebral_http_operators___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__cerebral_http_operators__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_cerebral_tags__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_cerebral_tags___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_cerebral_tags__);
@@ -1567,7 +1567,7 @@ var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = [
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _DependencyStore = __webpack_require__(53);
+var _DependencyStore = __webpack_require__(54);
 
 var _DependencyStore2 = _interopRequireDefault(_DependencyStore);
 
@@ -1575,33 +1575,33 @@ var _functionTree = __webpack_require__(21);
 
 var _functionTree2 = _interopRequireDefault(_functionTree);
 
-var _Module = __webpack_require__(56);
+var _Module = __webpack_require__(57);
 
 var _Module2 = _interopRequireDefault(_Module);
 
-var _Model = __webpack_require__(55);
+var _Model = __webpack_require__(56);
 
 var _Model2 = _interopRequireDefault(_Model);
 
 var _utils = __webpack_require__(0);
 
-var _VerifyProps = __webpack_require__(85);
+var _VerifyProps = __webpack_require__(86);
 
 var _VerifyProps2 = _interopRequireDefault(_VerifyProps);
 
-var _State = __webpack_require__(84);
+var _State = __webpack_require__(85);
 
 var _State2 = _interopRequireDefault(_State);
 
-var _Debugger = __webpack_require__(82);
+var _Debugger = __webpack_require__(83);
 
 var _Debugger2 = _interopRequireDefault(_Debugger);
 
-var _Controller = __webpack_require__(81);
+var _Controller = __webpack_require__(82);
 
 var _Controller2 = _interopRequireDefault(_Controller);
 
-var _Resolve = __webpack_require__(83);
+var _Resolve = __webpack_require__(84);
 
 var _Resolve2 = _interopRequireDefault(_Resolve);
 
@@ -2007,7 +2007,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = warning;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
 
 /***/ }),
 /* 21 */
@@ -2038,7 +2038,7 @@ Object.defineProperty(exports, 'FunctionTreeError', {
 exports.sequence = sequence;
 exports.parallel = parallel;
 
-var _FunctionTree = __webpack_require__(94);
+var _FunctionTree = __webpack_require__(95);
 
 Object.defineProperty(exports, 'FunctionTree', {
   enumerable: true,
@@ -2079,12 +2079,12 @@ function parallel() {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Cart__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Error__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Nav__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_ProductList__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_SearchInput__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_Title__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Cart__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Error__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Nav__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_ProductList__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_SearchInput__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_Title__ = __webpack_require__(43);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -2143,15 +2143,15 @@ var App = function (_Component) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cerebral__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cerebral___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_cerebral__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cerebral_http__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cerebral_http__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cerebral_http___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__cerebral_http__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_cerebral_devtools__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_cerebral_devtools__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_cerebral_devtools___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_cerebral_devtools__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__signals_initialized__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__signals_changedPage__ = __webpack_require__(48);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__signals_searched__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__signals_addedToCart__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__signals_removedFromCart__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__signals_initialized__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__signals_changedPage__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__signals_searched__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__signals_addedToCart__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__signals_removedFromCart__ = __webpack_require__(51);
 
 
 
@@ -2196,6 +2196,324 @@ module.exports = ReactDOM;
 
 /***/ }),
 /* 25 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var has = Object.prototype.hasOwnProperty
+  , prefix = '~';
+
+/**
+ * Constructor to create a storage for our `EE` objects.
+ * An `Events` instance is a plain object whose properties are event names.
+ *
+ * @constructor
+ * @api private
+ */
+function Events() {}
+
+//
+// We try to not inherit from `Object.prototype`. In some engines creating an
+// instance in this way is faster than calling `Object.create(null)` directly.
+// If `Object.create(null)` is not supported we prefix the event names with a
+// character to make sure that the built-in object properties are not
+// overridden or used as an attack vector.
+//
+if (Object.create) {
+  Events.prototype = Object.create(null);
+
+  //
+  // This hack is needed because the `__proto__` property is still inherited in
+  // some old browsers like Android 4, iPhone 5.1, Opera 11 and Safari 5.
+  //
+  if (!new Events().__proto__) prefix = false;
+}
+
+/**
+ * Representation of a single event listener.
+ *
+ * @param {Function} fn The listener function.
+ * @param {Mixed} context The context to invoke the listener with.
+ * @param {Boolean} [once=false] Specify if the listener is a one-time listener.
+ * @constructor
+ * @api private
+ */
+function EE(fn, context, once) {
+  this.fn = fn;
+  this.context = context;
+  this.once = once || false;
+}
+
+/**
+ * Minimal `EventEmitter` interface that is molded against the Node.js
+ * `EventEmitter` interface.
+ *
+ * @constructor
+ * @api public
+ */
+function EventEmitter() {
+  this._events = new Events();
+  this._eventsCount = 0;
+}
+
+/**
+ * Return an array listing the events for which the emitter has registered
+ * listeners.
+ *
+ * @returns {Array}
+ * @api public
+ */
+EventEmitter.prototype.eventNames = function eventNames() {
+  var names = []
+    , events
+    , name;
+
+  if (this._eventsCount === 0) return names;
+
+  for (name in (events = this._events)) {
+    if (has.call(events, name)) names.push(prefix ? name.slice(1) : name);
+  }
+
+  if (Object.getOwnPropertySymbols) {
+    return names.concat(Object.getOwnPropertySymbols(events));
+  }
+
+  return names;
+};
+
+/**
+ * Return the listeners registered for a given event.
+ *
+ * @param {String|Symbol} event The event name.
+ * @param {Boolean} exists Only check if there are listeners.
+ * @returns {Array|Boolean}
+ * @api public
+ */
+EventEmitter.prototype.listeners = function listeners(event, exists) {
+  var evt = prefix ? prefix + event : event
+    , available = this._events[evt];
+
+  if (exists) return !!available;
+  if (!available) return [];
+  if (available.fn) return [available.fn];
+
+  for (var i = 0, l = available.length, ee = new Array(l); i < l; i++) {
+    ee[i] = available[i].fn;
+  }
+
+  return ee;
+};
+
+/**
+ * Calls each of the listeners registered for a given event.
+ *
+ * @param {String|Symbol} event The event name.
+ * @returns {Boolean} `true` if the event had listeners, else `false`.
+ * @api public
+ */
+EventEmitter.prototype.emit = function emit(event, a1, a2, a3, a4, a5) {
+  var evt = prefix ? prefix + event : event;
+
+  if (!this._events[evt]) return false;
+
+  var listeners = this._events[evt]
+    , len = arguments.length
+    , args
+    , i;
+
+  if (listeners.fn) {
+    if (listeners.once) this.removeListener(event, listeners.fn, undefined, true);
+
+    switch (len) {
+      case 1: return listeners.fn.call(listeners.context), true;
+      case 2: return listeners.fn.call(listeners.context, a1), true;
+      case 3: return listeners.fn.call(listeners.context, a1, a2), true;
+      case 4: return listeners.fn.call(listeners.context, a1, a2, a3), true;
+      case 5: return listeners.fn.call(listeners.context, a1, a2, a3, a4), true;
+      case 6: return listeners.fn.call(listeners.context, a1, a2, a3, a4, a5), true;
+    }
+
+    for (i = 1, args = new Array(len -1); i < len; i++) {
+      args[i - 1] = arguments[i];
+    }
+
+    listeners.fn.apply(listeners.context, args);
+  } else {
+    var length = listeners.length
+      , j;
+
+    for (i = 0; i < length; i++) {
+      if (listeners[i].once) this.removeListener(event, listeners[i].fn, undefined, true);
+
+      switch (len) {
+        case 1: listeners[i].fn.call(listeners[i].context); break;
+        case 2: listeners[i].fn.call(listeners[i].context, a1); break;
+        case 3: listeners[i].fn.call(listeners[i].context, a1, a2); break;
+        case 4: listeners[i].fn.call(listeners[i].context, a1, a2, a3); break;
+        default:
+          if (!args) for (j = 1, args = new Array(len -1); j < len; j++) {
+            args[j - 1] = arguments[j];
+          }
+
+          listeners[i].fn.apply(listeners[i].context, args);
+      }
+    }
+  }
+
+  return true;
+};
+
+/**
+ * Add a listener for a given event.
+ *
+ * @param {String|Symbol} event The event name.
+ * @param {Function} fn The listener function.
+ * @param {Mixed} [context=this] The context to invoke the listener with.
+ * @returns {EventEmitter} `this`.
+ * @api public
+ */
+EventEmitter.prototype.on = function on(event, fn, context) {
+  var listener = new EE(fn, context || this)
+    , evt = prefix ? prefix + event : event;
+
+  if (!this._events[evt]) this._events[evt] = listener, this._eventsCount++;
+  else if (!this._events[evt].fn) this._events[evt].push(listener);
+  else this._events[evt] = [this._events[evt], listener];
+
+  return this;
+};
+
+/**
+ * Add a one-time listener for a given event.
+ *
+ * @param {String|Symbol} event The event name.
+ * @param {Function} fn The listener function.
+ * @param {Mixed} [context=this] The context to invoke the listener with.
+ * @returns {EventEmitter} `this`.
+ * @api public
+ */
+EventEmitter.prototype.once = function once(event, fn, context) {
+  var listener = new EE(fn, context || this, true)
+    , evt = prefix ? prefix + event : event;
+
+  if (!this._events[evt]) this._events[evt] = listener, this._eventsCount++;
+  else if (!this._events[evt].fn) this._events[evt].push(listener);
+  else this._events[evt] = [this._events[evt], listener];
+
+  return this;
+};
+
+/**
+ * Remove the listeners of a given event.
+ *
+ * @param {String|Symbol} event The event name.
+ * @param {Function} fn Only remove the listeners that match this function.
+ * @param {Mixed} context Only remove the listeners that have this context.
+ * @param {Boolean} once Only remove one-time listeners.
+ * @returns {EventEmitter} `this`.
+ * @api public
+ */
+EventEmitter.prototype.removeListener = function removeListener(event, fn, context, once) {
+  var evt = prefix ? prefix + event : event;
+
+  if (!this._events[evt]) return this;
+  if (!fn) {
+    if (--this._eventsCount === 0) this._events = new Events();
+    else delete this._events[evt];
+    return this;
+  }
+
+  var listeners = this._events[evt];
+
+  if (listeners.fn) {
+    if (
+         listeners.fn === fn
+      && (!once || listeners.once)
+      && (!context || listeners.context === context)
+    ) {
+      if (--this._eventsCount === 0) this._events = new Events();
+      else delete this._events[evt];
+    }
+  } else {
+    for (var i = 0, events = [], length = listeners.length; i < length; i++) {
+      if (
+           listeners[i].fn !== fn
+        || (once && !listeners[i].once)
+        || (context && listeners[i].context !== context)
+      ) {
+        events.push(listeners[i]);
+      }
+    }
+
+    //
+    // Reset the array, or remove it completely if we have no more listeners.
+    //
+    if (events.length) this._events[evt] = events.length === 1 ? events[0] : events;
+    else if (--this._eventsCount === 0) this._events = new Events();
+    else delete this._events[evt];
+  }
+
+  return this;
+};
+
+/**
+ * Remove all listeners, or those of the specified event.
+ *
+ * @param {String|Symbol} [event] The event name.
+ * @returns {EventEmitter} `this`.
+ * @api public
+ */
+EventEmitter.prototype.removeAllListeners = function removeAllListeners(event) {
+  var evt;
+
+  if (event) {
+    evt = prefix ? prefix + event : event;
+    if (this._events[evt]) {
+      if (--this._eventsCount === 0) this._events = new Events();
+      else delete this._events[evt];
+    }
+  } else {
+    this._events = new Events();
+    this._eventsCount = 0;
+  }
+
+  return this;
+};
+
+//
+// Alias methods names because people roll like that.
+//
+EventEmitter.prototype.off = EventEmitter.prototype.removeListener;
+EventEmitter.prototype.addListener = EventEmitter.prototype.on;
+
+//
+// This function doesn't apply anymore.
+//
+EventEmitter.prototype.setMaxListeners = function setMaxListeners() {
+  return this;
+};
+
+//
+// Expose the prefix.
+//
+EventEmitter.prefixed = prefix;
+
+//
+// Allow `EventEmitter` to be imported as module namespace.
+//
+EventEmitter.EventEmitter = EventEmitter;
+
+//
+// Expose the module.
+//
+if (true) {
+  module.exports = EventEmitter;
+}
+
+
+/***/ }),
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2258,7 +2576,7 @@ exports.default = {
 //# sourceMappingURL=DEFAULT_OPTIONS.js.map
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2363,7 +2681,7 @@ function parseResponse(xhr) {
 //# sourceMappingURL=fileUpload.js.map
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2384,17 +2702,17 @@ Object.defineProperty(exports, 'HttpProviderError', {
 });
 exports.default = HttpProviderFactory;
 
-var _request = __webpack_require__(35);
+var _request = __webpack_require__(36);
 
 var _request2 = _interopRequireDefault(_request);
 
 var _utils = __webpack_require__(2);
 
-var _fileUpload = __webpack_require__(26);
+var _fileUpload = __webpack_require__(27);
 
 var _fileUpload2 = _interopRequireDefault(_fileUpload);
 
-var _DEFAULT_OPTIONS = __webpack_require__(25);
+var _DEFAULT_OPTIONS = __webpack_require__(26);
 
 var _DEFAULT_OPTIONS2 = _interopRequireDefault(_DEFAULT_OPTIONS);
 
@@ -2524,7 +2842,7 @@ function HttpProviderFactory(passedOptions) {
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2554,7 +2872,7 @@ exports.default = httpDeleteFactory;
 //# sourceMappingURL=httpDelete.js.map
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2584,7 +2902,7 @@ exports.default = httpGetFactory;
 //# sourceMappingURL=httpGet.js.map
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2614,7 +2932,7 @@ exports.default = httpPatchFactory;
 //# sourceMappingURL=httpPatch.js.map
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2644,7 +2962,7 @@ exports.default = httpPostFactory;
 //# sourceMappingURL=httpPost.js.map
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2674,7 +2992,7 @@ exports.default = httpPutFactory;
 //# sourceMappingURL=httpPut.js.map
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2707,7 +3025,7 @@ exports.default = uploadFileFactory;
 //# sourceMappingURL=httpUploadFile.js.map
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2717,7 +3035,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _httpDelete = __webpack_require__(28);
+var _httpDelete = __webpack_require__(29);
 
 Object.defineProperty(exports, 'httpDelete', {
   enumerable: true,
@@ -2726,7 +3044,7 @@ Object.defineProperty(exports, 'httpDelete', {
   }
 });
 
-var _httpGet = __webpack_require__(29);
+var _httpGet = __webpack_require__(30);
 
 Object.defineProperty(exports, 'httpGet', {
   enumerable: true,
@@ -2735,7 +3053,7 @@ Object.defineProperty(exports, 'httpGet', {
   }
 });
 
-var _httpPatch = __webpack_require__(30);
+var _httpPatch = __webpack_require__(31);
 
 Object.defineProperty(exports, 'httpPatch', {
   enumerable: true,
@@ -2744,7 +3062,7 @@ Object.defineProperty(exports, 'httpPatch', {
   }
 });
 
-var _httpPost = __webpack_require__(31);
+var _httpPost = __webpack_require__(32);
 
 Object.defineProperty(exports, 'httpPost', {
   enumerable: true,
@@ -2753,7 +3071,7 @@ Object.defineProperty(exports, 'httpPost', {
   }
 });
 
-var _httpPut = __webpack_require__(32);
+var _httpPut = __webpack_require__(33);
 
 Object.defineProperty(exports, 'httpPut', {
   enumerable: true,
@@ -2762,7 +3080,7 @@ Object.defineProperty(exports, 'httpPut', {
   }
 });
 
-var _httpUploadFile = __webpack_require__(33);
+var _httpUploadFile = __webpack_require__(34);
 
 Object.defineProperty(exports, 'httpUploadFile', {
   enumerable: true,
@@ -2775,7 +3093,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2801,14 +3119,14 @@ function request(options, cb) {
 //# sourceMappingURL=request.js.map
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(34)
+module.exports = __webpack_require__(35)
 
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2816,7 +3134,7 @@ module.exports = __webpack_require__(34)
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cerebral_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_cerebral_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_cerebral_tags__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_cerebral_tags___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_cerebral_tags__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__computed_totalPrice__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__computed_totalPrice__ = __webpack_require__(46);
 var _templateObject = _taggedTemplateLiteral(['cart'], ['cart']),
     _templateObject2 = _taggedTemplateLiteral(['removedFromCart'], ['removedFromCart']);
 
@@ -2899,7 +3217,7 @@ var Cart = function Cart(_ref) {
 }, Cart));
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2930,7 +3248,7 @@ var ErrorComponent = function ErrorComponent(_ref) {
 /* harmony default export */ __webpack_exports__["a"] = (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_cerebral_react__["connect"])(props, ErrorComponent));
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2979,7 +3297,7 @@ var Nav = function Nav(_ref) {
 }, Nav));
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2987,7 +3305,7 @@ var Nav = function Nav(_ref) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cerebral_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_cerebral_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_cerebral_tags__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_cerebral_tags___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_cerebral_tags__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__computed_filteredProducts__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__computed_filteredProducts__ = __webpack_require__(44);
 var _templateObject = _taggedTemplateLiteral(['addedToCart'], ['addedToCart']);
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
@@ -3047,7 +3365,7 @@ var ProductList = function ProductList(_ref) {
 }, ProductList));
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3081,7 +3399,7 @@ var SearchInput = function SearchInput(_ref) {
 }, SearchInput));
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3089,7 +3407,7 @@ var SearchInput = function SearchInput(_ref) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cerebral_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_cerebral_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_cerebral_tags__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_cerebral_tags___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_cerebral_tags__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__computed_title__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__computed_title__ = __webpack_require__(45);
 var _templateObject = _taggedTemplateLiteral(['isLoading'], ['isLoading']);
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
@@ -3114,7 +3432,7 @@ var Title = function Title(_ref) {
 }, Title));
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3158,7 +3476,7 @@ function alphabetically(a, b) {
 }));
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3184,7 +3502,7 @@ var pageMap = {
 }));
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3206,7 +3524,7 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 }));
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3232,11 +3550,11 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPA
 ), document.getElementById('app'));
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cerebral_operators__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cerebral_operators__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cerebral_operators___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_cerebral_operators__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_cerebral_tags__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_cerebral_tags___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_cerebral_tags__);
@@ -3251,11 +3569,11 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 /* harmony default export */ __webpack_exports__["a"] = ([__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_cerebral_operators__["push"])(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_cerebral_tags__["state"])(_templateObject), __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_cerebral_tags__["props"])(_templateObject2))]);
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cerebral_operators__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cerebral_operators__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cerebral_operators___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_cerebral_operators__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_cerebral_tags__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_cerebral_tags___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_cerebral_tags__);
@@ -3281,11 +3599,11 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 // ];
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cerebral_operators__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cerebral_operators__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cerebral_operators___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_cerebral_operators__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_cerebral_tags__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_cerebral_tags___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_cerebral_tags__);
@@ -3301,11 +3619,11 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 /* harmony default export */ __webpack_exports__["a"] = ([__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_cerebral_operators__["set"])(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_cerebral_tags__["state"])(_templateObject), 'books'), __WEBPACK_IMPORTED_MODULE_2__chains_loadProducts__["a" /* default */]]);
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cerebral_operators__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cerebral_operators__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cerebral_operators___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_cerebral_operators__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_cerebral_tags__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_cerebral_tags___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_cerebral_tags__);
@@ -3320,11 +3638,11 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 /* harmony default export */ __webpack_exports__["a"] = ([__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_cerebral_operators__["splice"])(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_cerebral_tags__["state"])(_templateObject), __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_cerebral_tags__["props"])(_templateObject2), 1)]);
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cerebral_operators__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cerebral_operators__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cerebral_operators___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_cerebral_operators__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_cerebral_tags__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_cerebral_tags___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_cerebral_tags__);
@@ -3338,14 +3656,14 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 /* harmony default export */ __webpack_exports__["a"] = ([__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_cerebral_operators__["set"])(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_cerebral_tags__["state"])(_templateObject), __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_cerebral_tags__["props"])(_templateObject))]);
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(59)
+module.exports = __webpack_require__(60)
 
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3511,7 +3829,7 @@ exports.default = DependencyStore;
 //# sourceMappingURL=DependencyStore.js.map
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3610,7 +3928,7 @@ exports.default = DependencyTracker;
 //# sourceMappingURL=DependencyTracker.js.map
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3912,7 +4230,7 @@ exports.default = Model;
 //# sourceMappingURL=Model.js.map
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3972,7 +4290,7 @@ exports.default = Module;
 //# sourceMappingURL=Module.js.map
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3996,7 +4314,7 @@ function Provide(name, provider) {
 //# sourceMappingURL=Provide.js.map
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4077,7 +4395,7 @@ exports.default = UniversalController;
 //# sourceMappingURL=UniversalController.js.map
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4102,7 +4420,7 @@ exports.default = function () {
 
 var _utils = __webpack_require__(0);
 
-var _base = __webpack_require__(95);
+var _base = __webpack_require__(96);
 
 var _base2 = _interopRequireDefault(_base);
 
@@ -4454,7 +4772,7 @@ var Devtools = exports.Devtools = function (_DevtoolsBase) {
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4476,7 +4794,7 @@ Object.defineProperty(exports, 'compute', {
   }
 });
 
-var _Provide = __webpack_require__(57);
+var _Provide = __webpack_require__(58);
 
 Object.defineProperty(exports, 'provide', {
   enumerable: true,
@@ -4504,7 +4822,7 @@ var _Controller = __webpack_require__(19);
 
 var _Controller2 = _interopRequireDefault(_Controller);
 
-var _UniversalController = __webpack_require__(58);
+var _UniversalController = __webpack_require__(59);
 
 var _UniversalController2 = _interopRequireDefault(_UniversalController);
 
@@ -4519,7 +4837,7 @@ function UniversalController(options) {
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4548,7 +4866,7 @@ exports.default = function (target, value) {
 //# sourceMappingURL=concat.js.map
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4558,7 +4876,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _factories = __webpack_require__(93);
+var _factories = __webpack_require__(94);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -4569,7 +4887,7 @@ Object.defineProperty(exports, 'default', {
 //# sourceMappingURL=debounce.js.map
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4603,7 +4921,7 @@ exports.default = equalsFactory;
 //# sourceMappingURL=equals.js.map
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4667,7 +4985,7 @@ exports.default = function (target) {
 //# sourceMappingURL=increment.js.map
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4677,7 +4995,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _debounce = __webpack_require__(62);
+var _debounce = __webpack_require__(63);
 
 Object.defineProperty(exports, 'debounce', {
   enumerable: true,
@@ -4686,7 +5004,7 @@ Object.defineProperty(exports, 'debounce', {
   }
 });
 
-var _when = __webpack_require__(80);
+var _when = __webpack_require__(81);
 
 Object.defineProperty(exports, 'when', {
   enumerable: true,
@@ -4695,7 +5013,7 @@ Object.defineProperty(exports, 'when', {
   }
 });
 
-var _wait = __webpack_require__(79);
+var _wait = __webpack_require__(80);
 
 Object.defineProperty(exports, 'wait', {
   enumerable: true,
@@ -4704,7 +5022,7 @@ Object.defineProperty(exports, 'wait', {
   }
 });
 
-var _equals = __webpack_require__(63);
+var _equals = __webpack_require__(64);
 
 Object.defineProperty(exports, 'equals', {
   enumerable: true,
@@ -4713,7 +5031,7 @@ Object.defineProperty(exports, 'equals', {
   }
 });
 
-var _state = __webpack_require__(74);
+var _state = __webpack_require__(75);
 
 Object.defineProperty(exports, 'state', {
   enumerable: true,
@@ -4722,7 +5040,7 @@ Object.defineProperty(exports, 'state', {
   }
 });
 
-var _input = __webpack_require__(66);
+var _input = __webpack_require__(67);
 
 Object.defineProperty(exports, 'input', {
   enumerable: true,
@@ -4731,7 +5049,7 @@ Object.defineProperty(exports, 'input', {
   }
 });
 
-var _string = __webpack_require__(75);
+var _string = __webpack_require__(76);
 
 Object.defineProperty(exports, 'string', {
   enumerable: true,
@@ -4740,7 +5058,7 @@ Object.defineProperty(exports, 'string', {
   }
 });
 
-var _signal = __webpack_require__(72);
+var _signal = __webpack_require__(73);
 
 Object.defineProperty(exports, 'signal', {
   enumerable: true,
@@ -4749,7 +5067,7 @@ Object.defineProperty(exports, 'signal', {
   }
 });
 
-var _concat = __webpack_require__(61);
+var _concat = __webpack_require__(62);
 
 Object.defineProperty(exports, 'concat', {
   enumerable: true,
@@ -4758,7 +5076,7 @@ Object.defineProperty(exports, 'concat', {
   }
 });
 
-var _increment = __webpack_require__(64);
+var _increment = __webpack_require__(65);
 
 Object.defineProperty(exports, 'increment', {
   enumerable: true,
@@ -4767,7 +5085,7 @@ Object.defineProperty(exports, 'increment', {
   }
 });
 
-var _merge = __webpack_require__(67);
+var _merge = __webpack_require__(68);
 
 Object.defineProperty(exports, 'merge', {
   enumerable: true,
@@ -4776,7 +5094,7 @@ Object.defineProperty(exports, 'merge', {
   }
 });
 
-var _pop = __webpack_require__(68);
+var _pop = __webpack_require__(69);
 
 Object.defineProperty(exports, 'pop', {
   enumerable: true,
@@ -4785,7 +5103,7 @@ Object.defineProperty(exports, 'pop', {
   }
 });
 
-var _push = __webpack_require__(69);
+var _push = __webpack_require__(70);
 
 Object.defineProperty(exports, 'push', {
   enumerable: true,
@@ -4794,7 +5112,7 @@ Object.defineProperty(exports, 'push', {
   }
 });
 
-var _set = __webpack_require__(70);
+var _set = __webpack_require__(71);
 
 Object.defineProperty(exports, 'set', {
   enumerable: true,
@@ -4803,7 +5121,7 @@ Object.defineProperty(exports, 'set', {
   }
 });
 
-var _shift = __webpack_require__(71);
+var _shift = __webpack_require__(72);
 
 Object.defineProperty(exports, 'shift', {
   enumerable: true,
@@ -4812,7 +5130,7 @@ Object.defineProperty(exports, 'shift', {
   }
 });
 
-var _splice = __webpack_require__(73);
+var _splice = __webpack_require__(74);
 
 Object.defineProperty(exports, 'splice', {
   enumerable: true,
@@ -4821,7 +5139,7 @@ Object.defineProperty(exports, 'splice', {
   }
 });
 
-var _toggle = __webpack_require__(76);
+var _toggle = __webpack_require__(77);
 
 Object.defineProperty(exports, 'toggle', {
   enumerable: true,
@@ -4830,7 +5148,7 @@ Object.defineProperty(exports, 'toggle', {
   }
 });
 
-var _unset = __webpack_require__(77);
+var _unset = __webpack_require__(78);
 
 Object.defineProperty(exports, 'unset', {
   enumerable: true,
@@ -4839,7 +5157,7 @@ Object.defineProperty(exports, 'unset', {
   }
 });
 
-var _unshift = __webpack_require__(78);
+var _unshift = __webpack_require__(79);
 
 Object.defineProperty(exports, 'unshift', {
   enumerable: true,
@@ -4852,7 +5170,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4881,7 +5199,7 @@ function input(strings) {
 //# sourceMappingURL=input.js.map
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4928,7 +5246,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 //# sourceMappingURL=merge.js.map
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4957,7 +5275,7 @@ exports.default = function (target) {
 //# sourceMappingURL=pop.js.map
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4986,7 +5304,7 @@ exports.default = function (target, value) {
 //# sourceMappingURL=push.js.map
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5038,7 +5356,7 @@ var _utils = __webpack_require__(0);
 //# sourceMappingURL=set.js.map
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5067,7 +5385,7 @@ exports.default = function (target) {
 //# sourceMappingURL=shift.js.map
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5096,7 +5414,7 @@ function signal(strings) {
 //# sourceMappingURL=signal.js.map
 
 /***/ }),
-/* 73 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5137,7 +5455,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 //# sourceMappingURL=splice.js.map
 
 /***/ }),
-/* 74 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5166,7 +5484,7 @@ function state(strings) {
 //# sourceMappingURL=state.js.map
 
 /***/ }),
-/* 75 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5197,7 +5515,7 @@ function string(strings) {
 //# sourceMappingURL=string.js.map
 
 /***/ }),
-/* 76 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5229,7 +5547,7 @@ exports.default = function (target) {
 //# sourceMappingURL=toggle.js.map
 
 /***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5258,7 +5576,7 @@ exports.default = function (target) {
 //# sourceMappingURL=unset.js.map
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5287,7 +5605,7 @@ exports.default = function (target, value) {
 //# sourceMappingURL=unshift.js.map
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5315,7 +5633,7 @@ exports.default = waitFactory;
 //# sourceMappingURL=wait.js.map
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5374,7 +5692,7 @@ exports.default = whenFactory;
 //# sourceMappingURL=when.js.map
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5397,7 +5715,7 @@ exports.default = ControllerProviderFactory;
 //# sourceMappingURL=Controller.js.map
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5467,7 +5785,7 @@ exports.default = DebuggerProviderFactory;
 //# sourceMappingURL=Debugger.js.map
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5498,7 +5816,7 @@ exports.default = ResolveProviderFactory;
 //# sourceMappingURL=Resolve.js.map
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5591,7 +5909,7 @@ exports.default = StateProviderFactory;
 //# sourceMappingURL=State.js.map
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5617,7 +5935,7 @@ exports.default = VerifyPropsProvider;
 //# sourceMappingURL=VerifyProps.js.map
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5676,7 +5994,7 @@ var string = exports.string = createTemplateTag('string', {
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5688,7 +6006,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _DependencyTracker = __webpack_require__(54);
+var _DependencyTracker = __webpack_require__(55);
 
 var _DependencyTracker2 = _interopRequireDefault(_DependencyTracker);
 
@@ -6029,7 +6347,7 @@ exports.default = View;
 //# sourceMappingURL=View.js.map
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6101,7 +6419,7 @@ exports.default = Container;
 //# sourceMappingURL=Container.js.map
 
 /***/ }),
-/* 89 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6121,7 +6439,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _utils = __webpack_require__(0);
 
-var _View = __webpack_require__(87);
+var _View = __webpack_require__(88);
 
 var _View2 = _interopRequireDefault(_View);
 
@@ -6263,7 +6581,7 @@ function HOC(dependencies, mergeProps, Component) {
 //# sourceMappingURL=Hoc.js.map
 
 /***/ }),
-/* 90 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6331,7 +6649,7 @@ exports.default = StateContainer;
 //# sourceMappingURL=StateContainer.js.map
 
 /***/ }),
-/* 91 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6376,7 +6694,7 @@ var decoratorFactory = exports.decoratorFactory = function decoratorFactory(HOC)
 //# sourceMappingURL=connect.js.map
 
 /***/ }),
-/* 92 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6387,7 +6705,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.decorator = exports.connect = exports.StateContainer = exports.Container = undefined;
 
-var _Container = __webpack_require__(88);
+var _Container = __webpack_require__(89);
 
 Object.defineProperty(exports, 'Container', {
   enumerable: true,
@@ -6396,7 +6714,7 @@ Object.defineProperty(exports, 'Container', {
   }
 });
 
-var _StateContainer = __webpack_require__(90);
+var _StateContainer = __webpack_require__(91);
 
 Object.defineProperty(exports, 'StateContainer', {
   enumerable: true,
@@ -6405,11 +6723,11 @@ Object.defineProperty(exports, 'StateContainer', {
   }
 });
 
-var _Hoc = __webpack_require__(89);
+var _Hoc = __webpack_require__(90);
 
 var _Hoc2 = _interopRequireDefault(_Hoc);
 
-var _connect = __webpack_require__(91);
+var _connect = __webpack_require__(92);
 
 var _connect2 = _interopRequireDefault(_connect);
 
@@ -6420,14 +6738,14 @@ var decorator = exports.decorator = (0, _connect.decoratorFactory)(_Hoc2.default
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 93 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports.debounce = __webpack_require__(97).default
+exports.debounce = __webpack_require__(98).default
 
 
 /***/ }),
-/* 94 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6442,31 +6760,31 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var _eventemitter = __webpack_require__(103);
+var _eventemitter = __webpack_require__(25);
 
 var _eventemitter2 = _interopRequireDefault(_eventemitter);
 
-var _executeTree = __webpack_require__(96);
+var _executeTree = __webpack_require__(97);
 
 var _executeTree2 = _interopRequireDefault(_executeTree);
 
-var _staticTree = __webpack_require__(102);
+var _staticTree = __webpack_require__(103);
 
 var _staticTree2 = _interopRequireDefault(_staticTree);
 
-var _Execution = __webpack_require__(99);
+var _Execution = __webpack_require__(100);
 
 var _Execution2 = _interopRequireDefault(_Execution);
 
-var _Context = __webpack_require__(98);
+var _Context = __webpack_require__(99);
 
 var _Context2 = _interopRequireDefault(_Context);
 
-var _Props = __webpack_require__(101);
+var _Props = __webpack_require__(102);
 
 var _Props2 = _interopRequireDefault(_Props);
 
-var _Path = __webpack_require__(100);
+var _Path = __webpack_require__(101);
 
 var _Path2 = _interopRequireDefault(_Path);
 
@@ -6766,7 +7084,7 @@ var FunctionTree = exports.FunctionTree = function (_EventEmitter) {
 //# sourceMappingURL=FunctionTree.js.map
 
 /***/ }),
-/* 95 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7080,7 +7398,7 @@ exports.default = DevtoolsBase;
 //# sourceMappingURL=base.js.map
 
 /***/ }),
-/* 96 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7175,7 +7493,7 @@ function executeTree(execution, initialPayload, branchStart, branchEnd, parallel
 //# sourceMappingURL=executeTree.js.map
 
 /***/ }),
-/* 97 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7227,7 +7545,7 @@ exports.default = debounceFactory;
 //# sourceMappingURL=debounce.js.map
 
 /***/ }),
-/* 98 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7324,7 +7642,7 @@ function ContextProvider(extendedContext) {
 //# sourceMappingURL=Context.js.map
 
 /***/ }),
-/* 99 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7344,7 +7662,7 @@ function ExecutionProvider(execution) {
 //# sourceMappingURL=Execution.js.map
 
 /***/ }),
-/* 100 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7383,7 +7701,7 @@ function PathProvider() {
 //# sourceMappingURL=Path.js.map
 
 /***/ }),
-/* 101 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7403,7 +7721,7 @@ function PropsProvider() {
 //# sourceMappingURL=Props.js.map
 
 /***/ }),
-/* 102 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7488,324 +7806,6 @@ exports.default = function (tree) {
 //# sourceMappingURL=staticTree.js.map
 
 /***/ }),
-/* 103 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var has = Object.prototype.hasOwnProperty
-  , prefix = '~';
-
-/**
- * Constructor to create a storage for our `EE` objects.
- * An `Events` instance is a plain object whose properties are event names.
- *
- * @constructor
- * @api private
- */
-function Events() {}
-
-//
-// We try to not inherit from `Object.prototype`. In some engines creating an
-// instance in this way is faster than calling `Object.create(null)` directly.
-// If `Object.create(null)` is not supported we prefix the event names with a
-// character to make sure that the built-in object properties are not
-// overridden or used as an attack vector.
-//
-if (Object.create) {
-  Events.prototype = Object.create(null);
-
-  //
-  // This hack is needed because the `__proto__` property is still inherited in
-  // some old browsers like Android 4, iPhone 5.1, Opera 11 and Safari 5.
-  //
-  if (!new Events().__proto__) prefix = false;
-}
-
-/**
- * Representation of a single event listener.
- *
- * @param {Function} fn The listener function.
- * @param {Mixed} context The context to invoke the listener with.
- * @param {Boolean} [once=false] Specify if the listener is a one-time listener.
- * @constructor
- * @api private
- */
-function EE(fn, context, once) {
-  this.fn = fn;
-  this.context = context;
-  this.once = once || false;
-}
-
-/**
- * Minimal `EventEmitter` interface that is molded against the Node.js
- * `EventEmitter` interface.
- *
- * @constructor
- * @api public
- */
-function EventEmitter() {
-  this._events = new Events();
-  this._eventsCount = 0;
-}
-
-/**
- * Return an array listing the events for which the emitter has registered
- * listeners.
- *
- * @returns {Array}
- * @api public
- */
-EventEmitter.prototype.eventNames = function eventNames() {
-  var names = []
-    , events
-    , name;
-
-  if (this._eventsCount === 0) return names;
-
-  for (name in (events = this._events)) {
-    if (has.call(events, name)) names.push(prefix ? name.slice(1) : name);
-  }
-
-  if (Object.getOwnPropertySymbols) {
-    return names.concat(Object.getOwnPropertySymbols(events));
-  }
-
-  return names;
-};
-
-/**
- * Return the listeners registered for a given event.
- *
- * @param {String|Symbol} event The event name.
- * @param {Boolean} exists Only check if there are listeners.
- * @returns {Array|Boolean}
- * @api public
- */
-EventEmitter.prototype.listeners = function listeners(event, exists) {
-  var evt = prefix ? prefix + event : event
-    , available = this._events[evt];
-
-  if (exists) return !!available;
-  if (!available) return [];
-  if (available.fn) return [available.fn];
-
-  for (var i = 0, l = available.length, ee = new Array(l); i < l; i++) {
-    ee[i] = available[i].fn;
-  }
-
-  return ee;
-};
-
-/**
- * Calls each of the listeners registered for a given event.
- *
- * @param {String|Symbol} event The event name.
- * @returns {Boolean} `true` if the event had listeners, else `false`.
- * @api public
- */
-EventEmitter.prototype.emit = function emit(event, a1, a2, a3, a4, a5) {
-  var evt = prefix ? prefix + event : event;
-
-  if (!this._events[evt]) return false;
-
-  var listeners = this._events[evt]
-    , len = arguments.length
-    , args
-    , i;
-
-  if (listeners.fn) {
-    if (listeners.once) this.removeListener(event, listeners.fn, undefined, true);
-
-    switch (len) {
-      case 1: return listeners.fn.call(listeners.context), true;
-      case 2: return listeners.fn.call(listeners.context, a1), true;
-      case 3: return listeners.fn.call(listeners.context, a1, a2), true;
-      case 4: return listeners.fn.call(listeners.context, a1, a2, a3), true;
-      case 5: return listeners.fn.call(listeners.context, a1, a2, a3, a4), true;
-      case 6: return listeners.fn.call(listeners.context, a1, a2, a3, a4, a5), true;
-    }
-
-    for (i = 1, args = new Array(len -1); i < len; i++) {
-      args[i - 1] = arguments[i];
-    }
-
-    listeners.fn.apply(listeners.context, args);
-  } else {
-    var length = listeners.length
-      , j;
-
-    for (i = 0; i < length; i++) {
-      if (listeners[i].once) this.removeListener(event, listeners[i].fn, undefined, true);
-
-      switch (len) {
-        case 1: listeners[i].fn.call(listeners[i].context); break;
-        case 2: listeners[i].fn.call(listeners[i].context, a1); break;
-        case 3: listeners[i].fn.call(listeners[i].context, a1, a2); break;
-        case 4: listeners[i].fn.call(listeners[i].context, a1, a2, a3); break;
-        default:
-          if (!args) for (j = 1, args = new Array(len -1); j < len; j++) {
-            args[j - 1] = arguments[j];
-          }
-
-          listeners[i].fn.apply(listeners[i].context, args);
-      }
-    }
-  }
-
-  return true;
-};
-
-/**
- * Add a listener for a given event.
- *
- * @param {String|Symbol} event The event name.
- * @param {Function} fn The listener function.
- * @param {Mixed} [context=this] The context to invoke the listener with.
- * @returns {EventEmitter} `this`.
- * @api public
- */
-EventEmitter.prototype.on = function on(event, fn, context) {
-  var listener = new EE(fn, context || this)
-    , evt = prefix ? prefix + event : event;
-
-  if (!this._events[evt]) this._events[evt] = listener, this._eventsCount++;
-  else if (!this._events[evt].fn) this._events[evt].push(listener);
-  else this._events[evt] = [this._events[evt], listener];
-
-  return this;
-};
-
-/**
- * Add a one-time listener for a given event.
- *
- * @param {String|Symbol} event The event name.
- * @param {Function} fn The listener function.
- * @param {Mixed} [context=this] The context to invoke the listener with.
- * @returns {EventEmitter} `this`.
- * @api public
- */
-EventEmitter.prototype.once = function once(event, fn, context) {
-  var listener = new EE(fn, context || this, true)
-    , evt = prefix ? prefix + event : event;
-
-  if (!this._events[evt]) this._events[evt] = listener, this._eventsCount++;
-  else if (!this._events[evt].fn) this._events[evt].push(listener);
-  else this._events[evt] = [this._events[evt], listener];
-
-  return this;
-};
-
-/**
- * Remove the listeners of a given event.
- *
- * @param {String|Symbol} event The event name.
- * @param {Function} fn Only remove the listeners that match this function.
- * @param {Mixed} context Only remove the listeners that have this context.
- * @param {Boolean} once Only remove one-time listeners.
- * @returns {EventEmitter} `this`.
- * @api public
- */
-EventEmitter.prototype.removeListener = function removeListener(event, fn, context, once) {
-  var evt = prefix ? prefix + event : event;
-
-  if (!this._events[evt]) return this;
-  if (!fn) {
-    if (--this._eventsCount === 0) this._events = new Events();
-    else delete this._events[evt];
-    return this;
-  }
-
-  var listeners = this._events[evt];
-
-  if (listeners.fn) {
-    if (
-         listeners.fn === fn
-      && (!once || listeners.once)
-      && (!context || listeners.context === context)
-    ) {
-      if (--this._eventsCount === 0) this._events = new Events();
-      else delete this._events[evt];
-    }
-  } else {
-    for (var i = 0, events = [], length = listeners.length; i < length; i++) {
-      if (
-           listeners[i].fn !== fn
-        || (once && !listeners[i].once)
-        || (context && listeners[i].context !== context)
-      ) {
-        events.push(listeners[i]);
-      }
-    }
-
-    //
-    // Reset the array, or remove it completely if we have no more listeners.
-    //
-    if (events.length) this._events[evt] = events.length === 1 ? events[0] : events;
-    else if (--this._eventsCount === 0) this._events = new Events();
-    else delete this._events[evt];
-  }
-
-  return this;
-};
-
-/**
- * Remove all listeners, or those of the specified event.
- *
- * @param {String|Symbol} [event] The event name.
- * @returns {EventEmitter} `this`.
- * @api public
- */
-EventEmitter.prototype.removeAllListeners = function removeAllListeners(event) {
-  var evt;
-
-  if (event) {
-    evt = prefix ? prefix + event : event;
-    if (this._events[evt]) {
-      if (--this._eventsCount === 0) this._events = new Events();
-      else delete this._events[evt];
-    }
-  } else {
-    this._events = new Events();
-    this._eventsCount = 0;
-  }
-
-  return this;
-};
-
-//
-// Alias methods names because people roll like that.
-//
-EventEmitter.prototype.off = EventEmitter.prototype.removeListener;
-EventEmitter.prototype.addListener = EventEmitter.prototype.on;
-
-//
-// This function doesn't apply anymore.
-//
-EventEmitter.prototype.setMaxListeners = function setMaxListeners() {
-  return this;
-};
-
-//
-// Expose the prefix.
-//
-EventEmitter.prefixed = prefix;
-
-//
-// Allow `EventEmitter` to be imported as module namespace.
-//
-EventEmitter.EventEmitter = EventEmitter;
-
-//
-// Expose the module.
-//
-if (true) {
-  module.exports = EventEmitter;
-}
-
-
-/***/ }),
 /* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -7872,7 +7872,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 
 module.exports = checkPropTypes;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
 
 /***/ }),
 /* 105 */
@@ -8458,7 +8458,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
   return ReactPropTypes;
 };
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
 
 /***/ })
 /******/ ]);
