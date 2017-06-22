@@ -118,14 +118,14 @@ const Cart = ({ items, removeFromCart }) => {
 
 const Nav = ({ setPage }) => (
   <nav>
-    <button onClick={() => setPage('Book')}>View books</button>
-    <button onClick={() => setPage('Movie')}>View movies</button>
-    <button onClick={() => setPage('Everything')}>View all</button>
+    <button onClick={() => setPage('books')}>View books</button>
+    <button onClick={() => setPage('movies')}>View movies</button>
+    <button onClick={() => setPage('all')}>View all</button>
   </nav>
 );
 
 const Title = ({ isLoading, title }) => (
-  <h1>{isLoading ? 'Loading...' : `${title} Store`}</h1>
+  <h1>{isLoading ? 'Loading...' : title}</h1>
 );
 
 const SearchInput = ({ query, performSearch }) => (
@@ -141,12 +141,18 @@ function hasId(arr, id) {
   return arr.reduce((idFound, nextItem) => (idFound || nextItem.id === id), false);
 }
 
+const pageMap = {
+  books: 'Book Store',
+  movies: 'Movie Store',
+  all: 'Everything Store'
+};
+
 class App extends Component {
 
   constructor() {
     super();
     this.state = {
-      page: 'Book',
+      title: 'Book Store',
       items: [],
       filteredItems: [],
       isLoading: true,
@@ -157,42 +163,37 @@ class App extends Component {
     this.performSearch = this.performSearch.bind(this);
     this.addToCart = this.addToCart.bind(this);
     this.removeFromCart = this.removeFromCart.bind(this);
+    this.productFilter = this.productFilter.bind(this);
+  }
+
+  productFilter(item) {
+    const itemName = item.name.toLowerCase();
+    const query = this.state.query.toLowerCase();
+    return (
+      itemName.includes(query) &&
+      !hasId(this.state.cart, item.id)
+    );
   }
 
   setPage(page) {
-    this.setState({ page, isLoading: true, items: [], filteredItems: [] });
-    switch (page) {
-      case 'Book':
-        this.fetchItems('books').then((json) => this.setState({
-          items: json,
-          filteredItems: json.filter(
-            (item) => item.name.toLowerCase().includes(this.state.query.toLowerCase()) && !hasId(this.state.cart, item.id)
-          ),
+    this.setState({ title: pageMap[page], isLoading: true, items: [], filteredItems: [] });
+    if (page !== 'all') {
+      this.fetchItems(page)
+        .then((items) => this.setState({
+          items: items,
+          filteredItems: items.filter(this.productFilter),
+          isLoading: false
+        })
+      );
+    }
+    else {
+      Promise.all([this.fetchItems('books'), this.fetchItems('movies')])
+        .then(([books, movies]) => [...books, ...movies])
+        .then((items) => this.setState({
+          items: items,
+          filteredItems: items.filter(this.productFilter),
           isLoading: false
         }));
-        break;
-      case 'Movie':
-        this.fetchItems('movies').then((json) => this.setState({
-          items: json,
-          filteredItems: json.filter(
-            (item) => item.name.toLowerCase().includes(this.state.query.toLowerCase()) && !hasId(this.state.cart, item.id)
-          ),
-          isLoading: false
-        }));
-        break;
-      case 'Everything':
-        Promise.all([this.fetchItems('books'), this.fetchItems('movies')])
-          .then(([books, movies]) => [...books, ...movies])
-          .then((json) => this.setState({
-            items: json,
-            filteredItems: json.filter(
-              (item) => item.name.toLowerCase().includes(this.state.query.toLowerCase()) && !hasId(this.state.cart, item.id)
-            ),
-            isLoading: false
-          }));
-        break;
-      default:
-        console.error('Unknown page type: ', page);
     }
   }
 
@@ -218,6 +219,7 @@ class App extends Component {
 
   performSearch(event) {
     const query = event.target.value;
+    // cannot use `this.productFilter` here because `this.state.query` has not yet been set through `this.setState`!
     const filteredItems = this.state.items.filter(
       (item) => item.name.toLowerCase().includes(query.toLowerCase()) && !hasId(this.state.cart, item.id)
     );
@@ -250,7 +252,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Title isLoading={this.state.isLoading} title={this.state.page} />
+        <Title isLoading={this.state.isLoading} title={this.state.title} />
         <Nav setPage={this.setPage}/>
         <SearchInput query={this.state.query} performSearch={this.performSearch} />
         <ProductList items={this.state.filteredItems} addToCart={this.addToCart} />

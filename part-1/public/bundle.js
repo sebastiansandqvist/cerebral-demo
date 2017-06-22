@@ -124,5 +124,14 @@ var favorite = 'My favorite numbers are ' + x + ' and ' + y + '!';
 // console.log(`My favorite numbers are ${x} and ${y}!`);
 // console.log`My favorite numbers are ${x} and ${y}!`;
 
+
+// -------------------------------------
+// 4. Fetch
+// -------------------------------------
+
+// fetch('http://mithril-examples.firebaseio.com/books.json')
+//   .then((response) => response.json())
+//   .then((books) => console.log(books));
+
 /***/ })
 /******/ ]);

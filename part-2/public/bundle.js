@@ -174,8 +174,12 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 // -------------------------------------
 
 function alphabetically(a, b) {
-  if (a.name < b.name) return -1;
-  if (a.name > b.name) return 1;
+  if (a.name < b.name) {
+    return -1;
+  };
+  if (a.name > b.name) {
+    return 1;
+  };
   return 0;
 }
 
@@ -293,11 +297,67 @@ var Cart = function Cart(_ref2) {
   );
 };
 
+var Nav = function Nav(_ref3) {
+  var setPage = _ref3.setPage;
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    'nav',
+    null,
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'button',
+      { onClick: function onClick() {
+          return setPage('books');
+        } },
+      'View books'
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'button',
+      { onClick: function onClick() {
+          return setPage('movies');
+        } },
+      'View movies'
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'button',
+      { onClick: function onClick() {
+          return setPage('all');
+        } },
+      'View all'
+    )
+  );
+};
+
+var Title = function Title(_ref4) {
+  var isLoading = _ref4.isLoading,
+      title = _ref4.title;
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    'h1',
+    null,
+    isLoading ? 'Loading...' : title
+  );
+};
+
+var SearchInput = function SearchInput(_ref5) {
+  var query = _ref5.query,
+      performSearch = _ref5.performSearch;
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', {
+    type: 'text',
+    value: query,
+    onInput: performSearch,
+    placeholder: 'Search'
+  });
+};
+
 function hasId(arr, id) {
   return arr.reduce(function (idFound, nextItem) {
     return idFound || nextItem.id === id;
   }, false);
 }
+
+var pageMap = {
+  books: 'Book Store',
+  movies: 'Movie Store',
+  all: 'Everything Store'
+};
 
 var App = function (_Component) {
   _inherits(App, _Component);
@@ -308,7 +368,7 @@ var App = function (_Component) {
     var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
 
     _this.state = {
-      page: 'Book',
+      title: 'Book Store',
       items: [],
       filteredItems: [],
       isLoading: true,
@@ -319,57 +379,45 @@ var App = function (_Component) {
     _this.performSearch = _this.performSearch.bind(_this);
     _this.addToCart = _this.addToCart.bind(_this);
     _this.removeFromCart = _this.removeFromCart.bind(_this);
+    _this.productFilter = _this.productFilter.bind(_this);
     return _this;
   }
 
   _createClass(App, [{
+    key: 'productFilter',
+    value: function productFilter(item) {
+      var itemName = item.name.toLowerCase();
+      var query = this.state.query.toLowerCase();
+      return itemName.includes(query) && !hasId(this.state.cart, item.id);
+    }
+  }, {
     key: 'setPage',
     value: function setPage(page) {
       var _this2 = this;
 
-      this.setState({ page: page, isLoading: true, items: [], filteredItems: [] });
-      switch (page) {
-        case 'Book':
-          this.fetchItems('books').then(function (json) {
-            return _this2.setState({
-              items: json,
-              filteredItems: json.filter(function (item) {
-                return item.name.toLowerCase().includes(_this2.state.query.toLowerCase()) && !hasId(_this2.state.cart, item.id);
-              }),
-              isLoading: false
-            });
+      this.setState({ title: pageMap[page], isLoading: true, items: [], filteredItems: [] });
+      if (page !== 'all') {
+        this.fetchItems(page).then(function (items) {
+          return _this2.setState({
+            items: items,
+            filteredItems: items.filter(_this2.productFilter),
+            isLoading: false
           });
-          break;
-        case 'Movie':
-          this.fetchItems('movies').then(function (json) {
-            return _this2.setState({
-              items: json,
-              filteredItems: json.filter(function (item) {
-                return item.name.toLowerCase().includes(_this2.state.query.toLowerCase()) && !hasId(_this2.state.cart, item.id);
-              }),
-              isLoading: false
-            });
-          });
-          break;
-        case 'Everything':
-          Promise.all([this.fetchItems('books'), this.fetchItems('movies')]).then(function (_ref3) {
-            var _ref4 = _slicedToArray(_ref3, 2),
-                books = _ref4[0],
-                movies = _ref4[1];
+        });
+      } else {
+        Promise.all([this.fetchItems('books'), this.fetchItems('movies')]).then(function (_ref6) {
+          var _ref7 = _slicedToArray(_ref6, 2),
+              books = _ref7[0],
+              movies = _ref7[1];
 
-            return [].concat(_toConsumableArray(books), _toConsumableArray(movies));
-          }).then(function (json) {
-            return _this2.setState({
-              items: json,
-              filteredItems: json.filter(function (item) {
-                return item.name.toLowerCase().includes(_this2.state.query.toLowerCase()) && !hasId(_this2.state.cart, item.id);
-              }),
-              isLoading: false
-            });
+          return [].concat(_toConsumableArray(books), _toConsumableArray(movies));
+        }).then(function (items) {
+          return _this2.setState({
+            items: items,
+            filteredItems: items.filter(_this2.productFilter),
+            isLoading: false
           });
-          break;
-        default:
-          console.error('Unknown page type: ', page);
+        });
       }
     }
   }, {
@@ -408,6 +456,7 @@ var App = function (_Component) {
       var _this4 = this;
 
       var query = event.target.value;
+      // cannot use `this.productFilter` here because `this.state.query` has not yet been set through `this.setState`!
       var filteredItems = this.state.items.filter(function (item) {
         return item.name.toLowerCase().includes(query.toLowerCase()) && !hasId(_this4.state.cart, item.id);
       });
@@ -434,42 +483,12 @@ var App = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _this5 = this;
-
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         null,
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'h1',
-          null,
-          this.state.isLoading ? 'Loading...' : this.state.page + ' Store'
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'nav',
-          null,
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'button',
-            { onClick: function onClick() {
-                return _this5.setPage('Book');
-              } },
-            'View books'
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'button',
-            { onClick: function onClick() {
-                return _this5.setPage('Movie');
-              } },
-            'View movies'
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'button',
-            { onClick: function onClick() {
-                return _this5.setPage('Everything');
-              } },
-            'View all'
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', value: this.state.query, onInput: this.performSearch, placeholder: 'Search' }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Title, { isLoading: this.state.isLoading, title: this.state.title }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Nav, { setPage: this.setPage }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(SearchInput, { query: this.state.query, performSearch: this.performSearch }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(ProductList, { items: this.state.filteredItems, addToCart: this.addToCart }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Cart, { items: this.state.cart, removeFromCart: this.removeFromCart })
       );
