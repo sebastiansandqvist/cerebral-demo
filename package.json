@@ -7,12 +7,18 @@
     "part1:build": "webpack --config part-1/build/webpack.config.js --watch",
     "part1:serve": "browser-sync start --server --serveStatic \"part-1/public\" --files \"part-1/public/bundle.js\"",
     "part1": "npm-run-all --parallel part1:*",
+    
     "part2:build": "webpack --config part-2/build/webpack.config.js --watch",
     "part2:serve": "browser-sync start --server --serveStatic \"part-2/public\" --files \"part-2/public/bundle.js\" --no-open",
     "part2": "npm-run-all --parallel part2:*",
+    
     "part3:build": "webpack --config part-3/build/webpack.config.js --watch",
     "part3:serve": "browser-sync start --server --serveStatic \"part-3/public\" --files \"part-3/public/bundle.js\" --no-open",
-    "part3": "npm-run-all --parallel part3:*"
+    "part3": "npm-run-all --parallel part3:*",
+    
+    "part4:build": "webpack --config part-4/build/webpack.config.js --watch",
+    "part4:serve": "browser-sync start --server --serveStatic \"part-4/public\" --files \"part-4/public/bundle.js\" --no-open",
+    "part4": "npm-run-all --parallel part4:*"
   },
   "repository": {
     "type": "git",
@@ -37,8 +43,11 @@
     "@cerebral/http": "0.0.0-beta.3",
     "browser-sync": "^2.18.12",
     "cerebral": "^2.0.0-beta.3",
+    "jumpstate": "^2.2.2",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "redux": "^3.7.0"
   }
 }
